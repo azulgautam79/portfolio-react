@@ -1,42 +1,125 @@
 import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
+
 const projects = [
   {
-    title: "Fintech Dashboard",
+    title: "Job Seeker",
     description:
-      "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
-    image: "/projects/project1.png",
-    tags: ["React", "Typescript", "NodeJS"],
-    link: "#",
+      "A Job Finder Web Application connects job seekers with employers, offering job search, application management, and job alerts.",
+    image: "/projects/JobPortal_Image.webp",
+    tags: ["React.js", "Express.js", "MongoDB", "Nest.js", "Observability", "Redis", "AWS", "Terraform", "Ansible"],
+    link: "https://job-portal-frontend-gamma-mauve.vercel.app/",
+    github: "https://github.com/azulgautam79/jobseeker-backend-nestjs",
+  },
+  {
+    title: "Liberty Language & Paralegal Services",
+    description:
+      "Professional Multilingual Interpreting, Translation, Paralegal Services Globally",
+    image: "/projects/LibertyLanguage.png",
+    tags: ["Next.js", "TailwindCSS"],
+    link: "https://www.thelibertylanguage.com/",
     github: "#",
   },
   {
-    title: "E-Commerce Platform",
+    title: "Sales Analytics Dashboard",
     description:
-      "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
-    image: "/projects/project2.png",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
-    link: "#",
+      "An interactive sales analytics dashboard designed to visualize key business metrics, track sales performance, analyze trends, and provide clear insights for data-driven decision-making.",
+    image: "/projects/SalesDashboard.png",
+    tags: ["Excel", "Google Data Studio"],
+    link: "https://datastudio.google.com/reporting/c47aadae-9a98-43d4-88ab-5bde7eee7aa3",
     github: "#",
   },
   {
-    title: "AI Writing Assistant",
+    title: "Ecommerce Analytics Dashboard",
     description:
-      "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
-    image: "/projects/project3.png",
-    tags: ["React", "OpenAI", "Python", "FastAPI"],
+      "An interactive e-commerce analytics dashboard built with Power BI, SQL, and Excel to track sales, revenue, profit, customer behavior, product performance, and key business trends.",
+    image: "/projects/Ecommerce_Analytics.png",
+    tags: ["Excel", "SQL", "Power Query", "DAX", "PowerBI"],
     link: "#",
+    github: "https://github.com/azulgautam79/Ecommerce-Analytics-PowerBI",
+  },
+  {
+    title: "Ebook Creator",
+    description:
+      "Your AI-powered eBook creator — write smarter, design faster, and publish with ease.",
+    image: "/projects/ebook_creator.webp",
+    tags: ["React.js", "Express.js", "MongoDB", "Node.js", "Gemini"],
+    link: "https://e-book-creator-frontend.vercel.app/",
+    github: "https://github.com/lemongautam79/EBook_Creator_Frontend",
+  },
+  {
+    title: "Resume Builder",
+    description:
+      "Create a professional resume in minutes with our easy-to-use online builder.",
+    image: "/projects/ai_blogger.webp",
+    tags: ["React.js", "Express.js", "MongoDB", "Node.js"],
+    link: "https://blog-ai-frontend-theta.vercel.app/",
+    github: "https://github.com/lemongautam79/Resume_Builder_Frontend",
+  },
+  {
+    title: "Expense Tracker",
+    description:
+      "Smart expense tracking made simple — know where your money goes.",
+    image: "/projects/expense_tracker.webp",
+    tags: ["React.js", "Express.js", "MongoDB", "Node.js"],
+    link: "https://expense-tracker-frontend-gray-nine.vercel.app/login",
+    github: "https://github.com/lemongautam79/Expense_Tracker_Frontend",
+  },
+  {
+    title: "AI Interview Prep",
+    description:
+      "Ace your next interview with AI-powered practice and feedback.",
+    image: "/projects/ai_interview.webp",
+    tags: ["React.js", "Express.js", "MongoDB", "Node.js", "Gemini"],
+    link: "https://ai-interview-prep-frontend-phi.vercel.app/",
+    github: "https://github.com/lemongautam79/AI_InterviewPrep_Frontend",
+  },
+  {
+    title: "AI Blogger",
+    description:
+      "Your AI assistant for generating engaging, high-quality blog content in minutes.",
+    image: "/projects/ai_blogger.webp",
+    tags: ["React.js", "Express.js", "MongoDB", "Node.js", "Gemini"],
+    link: "https://blog-ai-frontend-theta.vercel.app/",
+    github: "https://github.com/lemongautam79/Blog_AI_Frontend",
+  },
+  {
+    title: "Movie Recommendation System",
+    description:
+      "A machine learning project that recommends movies to users based on their preferences and viewing history.",
+    image: "/projects/movie_recommendation.webp",
+    tags: ["Python", "Machine Learning"],
+    link: "https://lemongautam79-movie-recommendation-system-app-agayjy.streamlit.app/",
+    github: "https://github.com/lemongautam79/Movie-Recommendation-System",
+  },
+  {
+    title: "Heart Disease Prediction System",
+    description:
+      "A machine learning app that predicts the risk of heart disease based on health data.",
+    image: "/projects/Heart_Disease_Prediction.webp",
+    tags: ["Python", "Machine Learning"],
+    link: "https://lemongautam79-heart-disease-prediction-app-okbavo.streamlit.app/",
+    github: "https://github.com/lemongautam79/Heart_Disease_Prediction",
+  },
+  {
+    title: "Chrome Dinosaur",
+    description:
+      "A fun offline 2D endless runner game inspired by the classic Chrome Dinosaur game, featuring simple controls, obstacle-dodging gameplay, and an endless challenge to achieve the highest score.",
+    image: "/projects/Chrome_dino.png",
+    tags: ["Unity", "Adobe Illustrator"],
+    link: "https://www.mediafire.com/file/zzducowwdrh1anf/CHROMEDINOSAURWALA.exe/file",
     github: "#",
   },
   {
-    title: "Project Management Tool",
+    title: "FPS Shooter",
     description:
-      "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
-    image: "/projects/project4.png",
-    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
-    link: "#",
+      "An offline 3D first-person shooter game built with Unity, featuring immersive environments, fast-paced combat, enemy encounters, and engaging shooting mechanics.",
+    image: "/projects/FPSShooter.webp",
+    tags: ["Unity", "Blender"],
+    link: "https://www.mediafire.com/file/qqb8p9zfeipi14f/mysetup.exe/file",
     github: "#",
   },
+
 ];
 
 export const Projects = () => {
@@ -88,12 +171,16 @@ export const Projects = () => {
                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <a
                     href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
                   >
                     <ArrowUpRight className="w-5 h-5" />
                   </a>
                   <a
                     href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
                   >
                     <Github className="w-5 h-5" />

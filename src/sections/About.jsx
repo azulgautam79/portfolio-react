@@ -3,26 +3,27 @@ import { Code2, Lightbulb, Rocket, Users } from "lucide-react";
 const highlights = [
   {
     icon: Code2,
-    title: "Clean Code",
+    title: "Clean Architecture",
     description:
-      "Writing maintainable, scalable code that stands the test of time.",
+      "Building maintainable applications with clear structure, reusable components, and well-designed APIs.",
   },
   {
     icon: Rocket,
     title: "Performance",
     description:
-      "Optimizing for speed and delivering lightning-fast user experiences.",
+      "Creating fast, responsive applications with a focus on performance, scalability, and reliability.",
   },
   {
     icon: Users,
-    title: "Collaboration",
-    description: "Working closely with teams to bring ideas to life.",
+    title: "User Focused",
+    description:
+      "Turning ideas into intuitive digital experiences that are simple, accessible, and enjoyable to use.",
   },
   {
     icon: Lightbulb,
-    title: "Innovation",
+    title: "Continuous Learning",
     description:
-      "Staying ahead with the latest technologies and best practices.",
+      "Exploring new technologies and continuously improving my skills through real-world projects.",
   },
 ];
 
@@ -49,30 +50,32 @@ export const About = () => {
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I'm a passionate software engineer with over 5 years of
-                experience crafting digital products that make a difference. My
-                journey started with a curiosity for how things work on the web,
-                and it has evolved into a deep expertise in modern frontend
-                technologies.
+                I'm a software engineer passionate about building modern web applications
+                and solving real-world problems through technology. My journey began with
+                frontend development and has grown into a broader interest in full-stack
+                engineering and backend systems.
               </p>
+
               <p>
-                I specialize in React, Next.js, and TypeScript, building
-                everything from sleek landing pages to complex enterprise
-                applications. My approach combines technical excellence with a
-                keen eye for design and user experience.
+                I work primarily with React, Next.js, TypeScript, and NestJS, building
+                applications ranging from interactive web experiences to full-stack
+                platforms with REST APIs, authentication, databases, and third-party
+                integrations.
               </p>
+
               <p>
-                When I'm not coding, you'll find me exploring new technologies,
-                contributing to open-source projects, or sharing knowledge with
-                the developer community.
+                I enjoy understanding how systems work beyond the user interface — from
+                designing APIs and database architectures to deployment, monitoring, and
+                improving application performance. I'm constantly learning and building
+                projects that help me become a better engineer.
               </p>
             </div>
 
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foreground">
-                "My mission is to create digital experiences that are not just
-                functional, but truly delightful — products that users love to
-                use and developers love to maintain."
+                "I believe good software is more than just code — it's about solving the
+                right problems, creating meaningful experiences, and building systems that
+                are reliable, maintainable, and built to last."
               </p>
             </div>
           </div>
