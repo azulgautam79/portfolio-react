@@ -48,6 +48,15 @@ const projects = [
     github: "https://github.com/lemongautam79/EBook_Creator_Frontend",
   },
   {
+    title: "GraphQL Playground",
+    description:
+      "A learning-focused GraphQL API built with NestJS, Prisma, and PostgreSQL.",
+    image: "/projects/GraphQLWala.png",
+    tags: ["Nest.js", "GraphQL", "PostgreSQL", "Vercel"],
+    link: "https://graph-ql-sepia-two.vercel.app/graphql",
+    github: "https://github.com/azulgautam79/GraphQL",
+  },
+  {
     title: "Resume Builder",
     description:
       "Create a professional resume in minutes with our easy-to-use online builder.",
