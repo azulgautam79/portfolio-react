@@ -60,7 +60,7 @@ const projects = [
     title: "Resume Builder",
     description:
       "Create a professional resume in minutes with our easy-to-use online builder.",
-    image: "/projects/ai_blogger.webp",
+    image: "/projects/resume_builder.webp",
     tags: ["React.js", "Express.js", "MongoDB", "Node.js"],
     link: "https://blog-ai-frontend-theta.vercel.app/",
     github: "https://github.com/lemongautam79/Resume_Builder_Frontend",
