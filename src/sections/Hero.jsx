@@ -88,7 +88,7 @@ export const Hero = () => {
             </div>
 
             {/* Headline */}
-            <div className="space-y-4">
+            {/* <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
                 Turning <span className="text-primary glow-text">ideas</span>
                 <br />
@@ -100,6 +100,28 @@ export const Hero = () => {
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
                 Hi, I'm Lemon Gautam — a software engineer focused on building scalable full-stack applications using React, Next.js, TypeScript, and NestJS. I enjoy designing clean APIs, robust backend systems, and intuitive interfaces that solve real-world problems.
+              </p>
+            </div> */}
+
+            {/* Headline */}
+            <div className="space-y-4">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
+                Lemon Gautam
+              </h1>
+
+              <p className="text-2xl md:text-3xl font-semibold text-foreground animate-fade-in animation-delay-150">
+                Turning <span className="text-primary glow-text">ideas </span>
+                into reliable{" "}
+                <span className="font-serif italic font-normal text-white">
+                  software.
+                </span>
+              </p>
+
+              <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
+                I'm a Full-Stack Software Engineer focused on building scalable
+                applications using React, Next.js, TypeScript, and NestJS. I enjoy
+                designing clean APIs, robust backend systems, and intuitive interfaces
+                that solve real-world problems.
               </p>
             </div>
 
