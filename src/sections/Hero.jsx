@@ -61,7 +61,7 @@ function DotsComponent() {
 export const Hero = () => {
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section id="home" aria-labelledby="hero-heading" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Bg */}
       <div className="absolute inset-0">
         <img

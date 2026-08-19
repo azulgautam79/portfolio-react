@@ -41,7 +41,7 @@ export const Navbar = () => {
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-1">
-          <div className="glass rounded-full px-2 py-1 flex items-center gap-1">
+          <nav aria-label="Main navigation" className="glass rounded-full px-2 py-1 flex items-center gap-1">
             {navLinks.map((link, index) => (
               <a
                 href={link.href}
@@ -51,7 +51,7 @@ export const Navbar = () => {
                 {link.label}
               </a>
             ))}
-          </div>
+          </nav>
         </div>
 
         {/* CTA Button */}
@@ -79,7 +79,7 @@ export const Navbar = () => {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden glass-strong animate-fade-in">
-          <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
+          <nav aria-label="Main navigation" className="container mx-auto px-6 py-6 flex flex-col gap-4">
             {navLinks.map((link, index) => (
               <a
                 href={link.href}
@@ -101,7 +101,7 @@ export const Navbar = () => {
             >
               Contact Me
             </Button>
-          </div>
+          </nav>
         </div>
       )}
     </header>
