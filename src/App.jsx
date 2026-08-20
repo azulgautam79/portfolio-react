@@ -14,11 +14,11 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <Terminal/>
         <About />
         <Projects />
         <Experience />
         {/* <Testimonials /> */}
-        <Terminal/>
         <Contact />
       </main>
       <Footer />

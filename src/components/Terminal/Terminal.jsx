@@ -26,9 +26,9 @@ export const Terminal = () => {
     const inputRef = useRef(null);
     const terminalRef = useRef(null);
 
-    useEffect(() => {
-        inputRef.current?.focus();
-    }, []);
+    // useEffect(() => {
+    //     inputRef.current?.focus();
+    // }, []);
 
     useEffect(() => {
         if (terminalRef.current) {

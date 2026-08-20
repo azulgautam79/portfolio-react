@@ -3,10 +3,10 @@ import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const navLinks = [
+  { href: "#terminal", label: "Terminal" },
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
-  { href: "#experience", label: "Terminal" },
   { href: "#testimonials", label: "Testimonials" },
 ];
 

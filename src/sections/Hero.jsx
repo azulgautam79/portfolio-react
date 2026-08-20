@@ -8,27 +8,70 @@ import {
   Download,
 } from "lucide-react";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
+import {
+  siReact,
+  siNextdotjs,
+  siTypescript,
+  siNodedotjs,
+  siNestjs,
+  siGraphql,
+  siPostgresql,
+  siMongodb,
+  siRedis,
+  siDocker,
+  // siAmazonwebservices,
+  siVercel,
+  siTailwindcss,
+  siPrisma,
+  siDrizzle,
+  siJest,
+  siCypress,
+  siFigma,
+  siGit,
+  siGithubactions,
+  siTerraform,
+  siAnsible,
+  siPython,
+  // siPowerbi,
+  siGo,
+  siSocketdotio,
+} from "simple-icons/icons";
+
 
 const skills = [
-  "React",
-  "Next.js",
-  "TypeScript",
-  "Node.js",
-  "GraphQL",
-  "PostgreSQL",
-  "MongoDB",
-  "Redis",
-  "Docker",
-  "AWS",
-  "Vercel",
-  "Tailwind CSS",
-  "Prisma",
-  "Jest",
-  "Cypress",
-  "Figma",
-  "Git",
-  "GitHub Actions",
+  { name: "React", icon: siReact },
+  { name: "Next.js", icon: siNextdotjs },
+  { name: "TypeScript", icon: siTypescript },
+  { name: "Node.js", icon: siNodedotjs },
+  { name: "NestJS", icon: siNestjs },
+  { name: "Python", icon: siPython },
+  { name: "Go", icon: siGo },
+
+  { name: "GraphQL", icon: siGraphql },
+  { name: "Socket.IO", icon: siSocketdotio },
+
+  { name: "PostgreSQL", icon: siPostgresql },
+  { name: "MongoDB", icon: siMongodb },
+  { name: "Redis", icon: siRedis },
+  { name: "Prisma", icon: siPrisma },
+  { name: "Drizzle ORM", icon: siDrizzle },
+
+  { name: "Docker", icon: siDocker },
+  // { name: "AWS", icon: siAmazonwebservices },
+  { name: "Terraform", icon: siTerraform },
+  { name: "Ansible", icon: siAnsible },
+  { name: "Vercel", icon: siVercel },
+
+  { name: "Tailwind CSS", icon: siTailwindcss },
+  { name: "Jest", icon: siJest },
+  { name: "Cypress", icon: siCypress },
+  { name: "Figma", icon: siFigma },
+  { name: "Git", icon: siGit },
+  { name: "GitHub Actions", icon: siGithubactions },
+
+  // { name: "Power BI", icon: siPowerbi },
 ];
+
 
 const dots = Array.from({ length: 30 }, (_, i) => ({
   id: i,
@@ -86,22 +129,6 @@ export const Hero = () => {
                 Software Engineer • Full-Stack Developer
               </span>
             </div>
-
-            {/* Headline */}
-            {/* <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                Turning <span className="text-primary glow-text">ideas</span>
-                <br />
-                into reliable 
-                <br />
-                <span className="font-serif italic font-normal text-white">
-                  software.
-                </span>
-              </h1>
-              <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Lemon Gautam — a software engineer focused on building scalable full-stack applications using React, Next.js, TypeScript, and NestJS. I enjoy designing clean APIs, robust backend systems, and intuitive interfaces that solve real-world problems.
-              </p>
-            </div> */}
 
             {/* Headline */}
             <div className="space-y-4">
@@ -210,26 +237,61 @@ export const Hero = () => {
           <p className="text-sm text-muted-foreground mb-6 text-center">
             Technologies I work with
           </p>
+
           <div className="relative overflow-hidden">
+            {/* Left fade */}
             <div
-              className="absolute left-0 top-0 bottom-0 w-32
-             bg-gradient-to-r from-background to-transparent z-10"
+              className="
+        absolute left-0 top-0 bottom-0 w-32
+        bg-gradient-to-r from-background to-transparent
+        z-10 pointer-events-none
+      "
             />
+
+            {/* Right fade */}
             <div
-              className="absolute right-0 top-0 bottom-0 w-32
-             bg-gradient-to-l from-background to-transparent z-10"
+              className="
+        absolute right-0 top-0 bottom-0 w-32
+        bg-gradient-to-l from-background to-transparent
+        z-10 pointer-events-none
+      "
             />
+
+            {/* Marquee */}
             <div className="flex animate-marquee">
               {[...skills, ...skills].map((skill, idx) => (
-                <div key={idx} className="flex-shrink-0 px-8 py-4">
-                  <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">
-                    {skill}
-                  </span>
+                <div
+                  key={idx}
+                  className="flex-shrink-0 px-8 py-4 group"
+                  title={skill.name}
+                >
+                  <svg
+                    role="img"
+                    viewBox="0 0 24 24"
+                    width="42"
+                    height="42"
+                    fill="currentColor"
+                    className="text-muted-foreground/40 group-hover:text-primary transition-colors duration-300"
+                  >
+                    <path d={skill.icon.path} />
+                  </svg>
+                  {/* <svg
+                    role="img"
+                    viewBox="0 0 24 24"
+                    width="42"
+                    height="42"
+                    fill={`#${skill.icon.hex}`}
+                  >
+                    <path d={skill.icon.path} />
+                  </svg> */}
+
                 </div>
               ))}
+
             </div>
           </div>
         </div>
+
       </div>
 
       <div
